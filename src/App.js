@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Button, ButtonGroup, Col, Container, Image, Row} from "react-bootstrap";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container fluid>
+      <Row>
+          <Col xs={6} md={4}>
+              <Image src={require("./assets/img1.png")} rounded data-testid="img" thumbnail />
+          </Col>
+      </Row>
+        <Row >
+            <ButtonGroup>
+                <Button variant="primary">Button 1</Button>
+                <Button variant="primary">Button 2</Button>
+                <Button variant="primary">Button 3</Button>
+            </ButtonGroup>
+        </Row>
+    </Container>
   );
 }
 
