@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import {fireEvent, render} from '@testing-library/react';
 import App from './App';
 
 test('renders image', () => {
@@ -22,6 +22,31 @@ test('renders 3 buttons', () => {
 test('renders first image as default', () => {
   const { getByTestId } = render(<App />);
   const image = getByTestId("img");
-  console.log("image ", image.getAttribute("src"));
   expect(image.getAttribute("src")).toMatch(/img1.png/);
+});
+
+test('renders correct image when button 2 clicked', () => {
+  const { getByTestId } = render(<App />);
+  fireEvent.click(getByTestId('button-2'));
+  const image = getByTestId("img");
+  expect(image.getAttribute("src")).toMatch(/img2.png/);
+});
+
+test('renders next image when image is clicked ', () => {
+  const { getByTestId } = render(<App />);
+  const image = getByTestId('img');
+  fireEvent.click(image);
+  expect(image.getAttribute("src")).toMatch(/img2.png/);
+  fireEvent.click(image);
+  expect(image.getAttribute("src")).toMatch(/img3.jpg/);
+});
+
+
+test('set active state to buttons according to current image', () => {
+  const { getByTestId } = render(<App />);
+  const image = getByTestId('img');
+  expect(getByTestId("button-1")).toHaveClass('active');
+  fireEvent.click(image);
+  expect(getByTestId("button-1")).not.toHaveClass('active');
+  expect(getByTestId("button-2")).toHaveClass('active');
 });
