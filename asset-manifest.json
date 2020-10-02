@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/DrawImageTask/static/css/main.5f361e03.chunk.css",
+    "main.js": "/DrawImageTask/static/js/main.d12ec915.chunk.js",
+    "main.js.map": "/DrawImageTask/static/js/main.d12ec915.chunk.js.map",
+    "runtime-main.js": "/DrawImageTask/static/js/runtime-main.97a88a80.js",
+    "runtime-main.js.map": "/DrawImageTask/static/js/runtime-main.97a88a80.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/DrawImageTask/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.af333f48.chunk.js": "/DrawImageTask/static/js/2.af333f48.chunk.js",
+    "static/js/2.af333f48.chunk.js.map": "/DrawImageTask/static/js/2.af333f48.chunk.js.map",
+    "index.html": "/DrawImageTask/index.html",
+    "precache-manifest.ea8b6d5c421e2216acff7b6da8ce0331.js": "/DrawImageTask/precache-manifest.ea8b6d5c421e2216acff7b6da8ce0331.js",
+    "service-worker.js": "/DrawImageTask/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/DrawImageTask/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/DrawImageTask/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.af333f48.chunk.js.LICENSE.txt": "/DrawImageTask/static/js/2.af333f48.chunk.js.LICENSE.txt",
+    "static/media/img1.png": "/DrawImageTask/static/media/img1.e492ccf6.png",
+    "static/media/img2.png": "/DrawImageTask/static/media/img2.ed1a8749.png",
+    "static/media/img3.jpg": "/DrawImageTask/static/media/img3.e96d69ab.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.97a88a80.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.af333f48.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.d12ec915.chunk.js"
+  ]
+}
